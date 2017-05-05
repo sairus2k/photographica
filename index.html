@@ -10,79 +10,100 @@
 </head>
 <body>
 <nav class="nav">
-  <div class="nav__logo">
-    <img class="nav__logo-img" src="images/logo.png" alt="Photographica logo">
+  <div class="container  nav__inner">
+    <a href="#" class="nav__logo">
+      <span class="nav__brand">Gra</span>&nbsp;<span class="nav__brand nav__brand--black">phica</span>
+    </a>
+    <ul class="nav__menu">
+      <li class="nav__menu-item">
+        <a class="nav__menu-link  nav__menu-link--active">Home</a>
+      </li>
+      <li class="nav__menu-item">
+        <a class="nav__menu-link" href="#work">Work</a>
+      </li>
+      <li class="nav__menu-item">
+        <a class="nav__menu-link" href="#contact">Contact</a>
+      </li>
+    </ul>
   </div>
-  <ul class="nav__menu">
-    <li class="nav__menu-item">
-      <a class="nav__menu-link  nav__menu-link--active">Home</a>
-    </li>
-    <li class="nav__menu-item">
-      <a class="nav__menu-link" href="#work">Work</a>
-    </li>
-    <li class="nav__menu-item">
-      <a class="nav__menu-link" href="#contact">Contact</a>
-    </li>
-  </ul>
 </nav>
 <section class="home" id="home">
-  <p class="home__slogan">Proin gravida nibh vel velit aenean sollicitud, loremquis nisi elit</p>
+  <div class="container  home__inner">
+    <p class="home__slogan">Proin gravida nibh vel velit aenean sollicitud, loremquis nisi elit</p>
+  </div>
 </section>
 <section class="work" id="work">
-  <div class="work__photo  work__photo--width">
-    <img class="work__img" src="photo/photo-1.jpg" alt="photo-1">
-  </div>
-  <div class="work__photo  work__photo--width">
-    <img class="work__img" src="photo/photo-2.jpg" alt="photo-2">
-  </div>
-  <div class="work__photo  work__photo--width">
-    <img class="work__img" src="photo/photo-3.jpg" alt="photo-3">
-  </div>
-  <div class="work__photo">
-    <img class="work__img" src="photo/photo-4.jpg" alt="photo-4">
-  </div>
-  <div class="work__photo">
-    <img class="work__img" src="photo/photo-5.jpg" alt="photo-5">
-  </div>
-  <div class="work__photo  work__photo--width">
-    <img class="work__img" src="photo/photo-6.jpg" alt="photo-6">
-  </div>
-  <div class="work__photo">
-    <img class="work__img" src="photo/photo-7.jpg" alt="photo-7">
-  </div>
-  <div class="work__photo">
-    <img class="work__img" src="photo/photo-8.jpg" alt="photo-8">
-  </div>
-  <div class="work__photo  work__photo--width">
-    <img class="work__img" src="photo/photo-9.jpg" alt="photo-9">
+  <div class="container  work__inner">
+    <picture class="work__photo  work__photo--width-mobile">
+      <source srcset="photo/photo-1_large.jpg" media="(min-width: 768px)">
+      <img class="work__img" src="photo/photo-1.jpg" alt="photo-1">
+    </picture>
+    <picture class="work__photo  work__photo--width-mobile  work__photo--width-desktop">
+      <source srcset="photo/photo-2_large.jpg" media="(min-width: 768px)">
+      <img class="work__img" src="photo/photo-2.jpg" alt="photo-2">
+    </picture>
+    <picture class="work__photo  work__photo--width-mobile">
+      <source srcset="photo/photo-3_large.jpg" media="(min-width: 768px)">
+      <img class="work__img" src="photo/photo-3.jpg" alt="photo-3">
+    </picture>
+    <picture class="work__photo">
+      <source srcset="photo/photo-4_large.jpg" media="(min-width: 768px)">
+      <img class="work__img" src="photo/photo-4.jpg" alt="photo-4">
+    </picture>
+    <picture class="work__photo">
+      <source srcset="photo/photo-5_large.jpg" media="(min-width: 768px)">
+      <img class="work__img" src="photo/photo-5.jpg" alt="photo-5">
+    </picture>
+    <picture class="work__photo  work__photo--width-mobile">
+      <source srcset="photo/photo-6_large.jpg" media="(min-width: 768px)">
+      <img class="work__img" src="photo/photo-6.jpg" alt="photo-6">
+    </picture>
+    <picture class="work__photo">
+      <source srcset="photo/photo-7_large.jpg" media="(min-width: 768px)">
+      <img class="work__img" src="photo/photo-7.jpg" alt="photo-7">
+    </picture>
+    <picture class="work__photo   work__photo--width-desktop">
+      <source srcset="photo/photo-8_large.jpg" media="(min-width: 768px)">
+      <img class="work__img" src="photo/photo-8.jpg " alt="photo-8">
+    </picture>
+    <picture class="work__photo  work__photo--width-mobile  work__photo--height-desktop">
+      <source srcset="photo/photo-9_large.jpg" media="(min-width: 768px)">
+      <img class="work__img" src="photo/photo-9.jpg" alt="photo-9">
+    </picture>
   </div>
 </section>
 <section class="contact" id="contact">
-  <h1 class="contact__header">Get in touch </h1>
-  <section class="contact__section">
-    <h3 class="contact__subheader">Office</h3>
-    <p class="contact__address">
-      364 Street, 4th Floor<br>
-      Proin gravida nibh vel velit auctor<br>
-      India</p>
-    <p class="contact__address">T / <a href="tel:+919922223195" class="contact__link">+ 91 99 2222 3195</a></p>
-    <p class="contact__address">Email <a href="mailto:rajputrajesh_448@yaoo.com" class="contact__link">rajputrajesh_448@yaoo.com</a></p>
-  </section>
-  <section class="contact__section">
-    <h3 class="contact__subheader">Social</h3>
-    <div class="contact__social">
-      <a href="http://facebook.com/" class="contact__social-link" target="_blank">Facebook</a>
-      <a href="http://twitter.com/" class="contact__social-link" target="_blank">Twitter</a>
+  <div class="container contact__inner">
+    <h1 class="contact__header">Get in touch </h1>
+    <div class="contact__content">
+      <section class="contact__section">
+        <h3 class="contact__subheader">Office</h3>
+        <p class="contact__address">
+          364 Street, 4th Floor<br>
+          Proin gravida nibh vel velit auctor<br>
+          India</p>
+        <p class="contact__address">T / <a href="tel:+919922223195" class="contact__link">+ 91 99 2222 3195</a></p>
+        <p class="contact__address">Email <a href="mailto:rajputrajesh_448@yaoo.com" class="contact__link">rajputrajesh_448@yaoo.com</a></p>
+      </section>
+      <section class="contact__section">
+        <h3 class="contact__subheader">Social</h3>
+        <div class="contact__social">
+          <a href="https://facebook.com/" class="contact__social-link" target="_blank">Facebook</a>
+          <a href="https://twitter.com/" class="contact__social-link" target="_blank">Twitter</a>
+          <a href="https://linkedin.com/" class="contact__social-link" target="_blank">Linkedin</a>
+          <a href="https://behance.com/" class="contact__social-link" target="_blank">Behance</a>
+        </div>
+      </section>
+      <section class="contact__section  contact__section--large">
+        <h3 class="contact__subheader">Say hello to us</h3>
+        <form class="contact__form">
+          <input type="text" class="contact__field" title="name" placeholder="Name">
+          <textarea rows="10" class="contact__field contact__field--resize" title="message" placeholder="Your message"></textarea>
+          <button type="submit" class="btn contact__submit">Submit</button>
+        </form>
+      </section>
     </div>
-  </section>
-  <section class="contact__section">
-    <h3 class="contact__subheader">Say hello to us</h3>
-    <form class="contact__form">
-      <input type="text" class="contact__input" title="name" placeholder="Name">
-      <textarea rows="10" class="contact__input" title="message" placeholder="Your message"></textarea>
-      <button type="submit" class="btn contact__submit">Submit</button>
-    </form>
-  </section>
+  </div>
 </section>
 </body>
 </html>
