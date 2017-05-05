@@ -54,7 +54,8 @@ body {
 }
 
 .nav__logo {
-  background: url('images/logo.svg') no-repeat left center / 44px 45px;
+  /*todo load image via webpack's url-loader*/
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NiIgaGVpZ2h0PSI2NyIgdmlld0JveD0iMCAwIDY2IDY3Ij48cGF0aCBkPSJNMzEgM2MxOC4xMiA3Ljk1IDM1LjYyIDEuODUgMzQgMjAtMi44OCAzMi4yMy05LjczIDMxLjc5LTQzIDQzQzQuOTkgNzEuNzMgMCAzOS4yMyAwIDIxUzE0LjU2LTQuMjIgMzEgM3oiLz48cGF0aCBmaWxsPSIjZjVmNWY4IiBkPSJNNTEgMzRjMi4yIDAgNCAxLjU3IDQgMy41UzUzLjIgNDEgNTEgNDFzLTUtMS4wNy01LTMgMi44LTQgNS00eiIvPjwvc3ZnPg==') no-repeat left center / 44px 45px;
   height: 45px;
   padding: 8px 0 0 4px;
   text-decoration: none;
@@ -192,7 +193,8 @@ body {
   bottom: -20px;
   left: 0;
   margin: 0 auto;
-  background-image: url('images/triangles.png');
+  /*todo load image via webpack's url-loader*/
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAHCAYAAAClSnWRAAAA3UlEQVQ4T82TPQrCQBCF36xY2FgnG4wewQN4AS1tRLAWTxDECwTxABaWgoVgKXgBD+AJxGCyqW0shIwgxL8kJlXidrvz+HjfwBISTsMwmkHAq5Kg/tF1D0m5tPc8ORRXxpSyBcYWQBXABYSO43n7tOLf87w5EZm6prWZxAZA5a3cNQB3z0rtsgoVwfmQqUnZI+YlQOVoab6BxcDx3XWaUFGcp4yp60OA5gDEj7IBwCNHqUVSpkjOQ8aU0gJjmrbxcE4M6+R7s5g/UiiHTF3aAMZZRV45sh3lTsL7P3Duxvyb4B0zQU4AAAAASUVORK5CYII=');
 }
 
 .work__inner {
